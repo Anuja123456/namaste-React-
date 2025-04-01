@@ -21,20 +21,24 @@ const Header = () =>{
 };
 const resList = [
     {
-     resName: "Meghana Foods",
-     avgRating : 3.2
+        id:1,
+        resName: "Meghana Foods",
+        avgRating : 3.2
     },
     {
-     resName: "KFC",
-     avgRating:4.1
+        id:2,
+        resName: "KFC",
+        avgRating:4.1
     },
     {
-     resName: "McDonald's",
-     avgRating: 3.7
+        id:3,
+        resName: "McDonald's",
+        avgRating: 3.7
     },
     {
-     resName: "Dominos",
-     avgRating:4.3
+        id:4,
+        resName: "Dominos",
+        avgRating:4.3
     }
 ]
     
