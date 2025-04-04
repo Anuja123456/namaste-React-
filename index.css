@@ -27,8 +27,11 @@
     margin-right: 10px;
 
 }
-.search {
+.filter {
     padding: 10px;
+}
+.filter-btn{
+    cursor: pointer;
 }
 .res-logo {
     width: 100%; 
