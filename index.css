@@ -21,18 +21,35 @@
 }
 .res-card{
     width: 200px;
-    height: 350px;
+    height: auto;
     border: 1px solid black;
     padding: 5px;
     margin-right: 10px;
+    margin-bottom: 10px;
 
 }
 .filter {
     padding: 10px;
+    display: flex;
 }
 .filter-btn{
+    margin-left: 10px;
     cursor: pointer;
 }
 .res-logo {
     width: 100%; 
+}
+.shimmer-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.shimmer-card {
+    width: 200px;
+    height: 400px;
+    background-color: #f0f0f0;
+    margin: 10px;
+}
+.login {
+    cursor: pointer;
+    margin-right: 10px;
 }
