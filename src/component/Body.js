@@ -25,20 +25,20 @@ const Body = () => {
     if(onlineStatus === false) return <h1>Looks Looks you're Offline. Please check your internet connection.</h1>
     return listOfRestaurants.length === 0 ? <Shimmer/> :(
         <div className="body">
-            <div className="filter">
-                <div className="search">
-                    <input type="text" className="search-box" value={searchText}
+            <div className="filter flex">
+                <div className="search ">
+                    <input type="text" className="border border-solid border-black " value={searchText}
                     onChange={(e)=>{
                         setsearchText(e.target.value);
                     }}
                     />
-                    <button onClick={()=>{
+                    <button className=" bg-blue-500 text-white m-4 border-black border-0 px-1 rounded-sm " onClick={()=>{
                         const filtertheRestaurant = listOfRestaurants.filter((res) => {
                         return res.info.name.toLowerCase().includes(searchText.toLowerCase());
                     });
                     setfilteredRestaurant(filtertheRestaurant);}}>Search</button>
                 </div>
-                <button className="filter-btn" 
+                <button className="flex m-4 bg-blue-500 text-white px-1 rounded-sm" 
                 onClick={()=>{
                     const filteredList = listOfRestaurants.filter(
                         (res) => res.info.avgRating > 4
@@ -50,9 +50,9 @@ const Body = () => {
                 Top Rated Restaurant
                 </button>
             </div>
-            <div className="res-container">
+            <div className="res-container flex flex-wrap">
             {filtertheRestaurant.map((restaurant) => (
-                <Link key={restaurant.info.id} to={"/restaurants/" + restaurant.info.id}><RestaurantCard  resData={restaurant} /></Link>
+                <Link className="mb-4" key={restaurant.info.id} to={"/restaurants/" + restaurant.info.id}><RestaurantCard  resData={restaurant} /></Link>
             ))}
                
             </div>

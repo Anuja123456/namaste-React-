@@ -21,11 +21,11 @@ const RestaurantMenu = () => {
     const {itemCards} = resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card;
     //console.log(itemCards);
     return(
-        <div>
+        <div className="p-4 m-4">
             <h1>{name}</h1>
             <p>{cuisines.join(",")} - {costForTwoMessage}</p>
-            <h3>Menu</h3> 
-            <ul>
+            <h3 className="font-bold">Menu</h3> 
+            <ul className="list-disc mx-8">
                 {itemCards.map(item => <li key={item.card.info.id}>{item.card.info.name} - {item.card.info.price/100}</li>)}
             </ul>
         </div>
