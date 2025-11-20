@@ -12,7 +12,7 @@ useEffect(()=>{
     console.log("useEffect called")
 })
 
-    onlineStatus = useOnlineStatus();
+     onlineStatus = useOnlineStatus();
     return(
         <div className="flex justify-between border-b-2 border-black">
             <div className="logo-container">

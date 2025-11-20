@@ -18,7 +18,6 @@ const Body = () => {
     const json = await data.json();
     setlistOfRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     setfilteredRestaurant(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-
 }
 
     const onlineStatus = useOnlineStatus();
