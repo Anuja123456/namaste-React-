@@ -9,6 +9,7 @@ import FilterItem from "./component/FilterItem.js";
 import UserList from "./component/UserList.js";
 import Button from "./component/Button.js";
 import SimpleForm from "./component/SimpleForm.js";
+import ToDoList from "./component/ToDoList.js";
 import RestaurantMenu from "./component/RestaurantMenu.js";
 import { createBrowserRouter,Outlet,RouterProvider } from "react-router";
 import Contact from "./component/Contact.js";
@@ -17,6 +18,7 @@ import Button from "./component/Button.js";
 const AppLayout = () =>{
     return(
         <div className="app">
+            <ToDoList/>
             <Button text="Login"/>
             <UserList/>
             <Counter/>
